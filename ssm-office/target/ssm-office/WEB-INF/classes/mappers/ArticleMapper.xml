@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqy.mapper.ArticleMapper" >
+  <resultMap id="BaseResultMap" type="com.zqy.pojo.Article" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="article_id" property="articleId" jdbcType="INTEGER" />
+    <result column="article_name" property="articleName" jdbcType="VARCHAR" />
+    <result column="stock_num" property="stockNum" jdbcType="INTEGER" />
+    <result column="stock_unit" property="stockUnit" jdbcType="VARCHAR" />
+    <result column="article_type" property="articleType" jdbcType="INTEGER" />
+    <result column="article_describe" property="articleDescribe" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <resultMap id="ArticleAndTypeMap" type="Article" extends="BaseResultMap">
+    <association property="type" resultMap="com.zqy.mapper.ArticleTypeMapper.BaseResultMap"/>
+  </resultMap>
+    <select id="selectList" resultMap="ArticleAndTypeMap">
+SELECT
+article.article_id,
+article.article_name,
+article.stock_num,
+article.stock_unit,
+article.article_type,
+article.article_describe,
+article_type.article_type_id,
+article_type.`name`
+FROM
+article
+LEFT JOIN
+article_type
+ON
+article.article_type = article_type.article_type_id
+<where>
+  <if test="articleType!=null">
+    and article.article_type=#{articleType}
+  </if>
+  <if test="articleName!=null">
+    and article.article_name like concat('%',#{articleName},'%')
+  </if>
+</where>
+      ORDER BY
+      article_id
+      DESC
+    </select>
+</mapper>

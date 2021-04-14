@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqy.mapper.ApplyMapper" >
+  <resultMap id="BaseResultMap" type="com.zqy.pojo.Apply" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="apply_id" property="applyId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="article_id" property="articleId" jdbcType="INTEGER" />
+    <result column="apply_num" property="applyNum" jdbcType="INTEGER" />
+    <result column="apply_unit" property="applyUnit" jdbcType="VARCHAR" />
+    <result column="apply_date" property="applyDate" jdbcType="VARCHAR" />
+    <result column="apply_state" property="applyState" jdbcType="INTEGER" />
+    <result column="apply_reason" property="applyReason" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <resultMap id="ApplyAndArticleAndStateAndUserMap" type="Apply" extends="BaseResultMap">
+    <association property="article" resultMap="com.zqy.mapper.ArticleMapper.ArticleAndTypeMap"/>
+    <association property="state" javaType="ApplyState">
+      <id property="applyStateId" column="apply_state_id"/>
+      <result property="name" column="asName"></result>
+    </association>
+    <association property="user" resultMap="com.zqy.mapper.UserMapper.BaseResultMap"/>
+  </resultMap>
+  <select id="selectList" resultMap="ApplyAndArticleAndStateAndUserMap">
+SELECT
+apply.apply_id,
+apply.user_id,
+apply.article_id,
+apply.apply_num,
+apply.apply_unit,
+apply.apply_reason,
+apply.apply_date,
+apply.apply_state,
+apply_state.apply_state_id,
+apply_state.`name` asName,
+article.article_name,
+article.stock_num,
+article.stock_unit,
+article.article_type,
+article.article_describe,
+article_type.article_type_id,
+article_type.`name`,
+`user`.login_name,
+`user`.`password`,
+`user`.user_name,
+`user`.role
+FROM
+apply
+LEFT JOIN apply_state ON apply.apply_state = apply_state.apply_state_id
+LEFT JOIN article ON apply.article_id = article.article_id
+LEFT JOIN article_type ON article.article_type = article_type.article_type_id
+LEFT JOIN `user` ON apply.user_id = `user`.user_id
+    <where>
+      <if test="articleType!=null">
+        and article.article_type=#{articleType}
+      </if>
+      <if test="articleName!=null">
+        and article.article_name like concat('%',#{articleName},'%')
+      </if>
+      and apply.user_id=#{userId}
+    </where>
+    order by apply.apply_id asc
+  </select>
+  <select id="selectById" resultMap="ApplyAndArticleAndStateAndUserMap">
+    SELECT
+    apply.apply_id,
+    apply.user_id,
+    apply.article_id,
+    apply.apply_num,
+    apply.apply_unit,
+    apply.apply_reason,
+    apply.apply_date,
+    apply.apply_state,
+    apply_state.apply_state_id,
+    apply_state.`name` asName,
+    article.article_name,
+    article.stock_num,
+    article.stock_unit,
+    article.article_type,
+    article.article_describe,
+    article_type.article_type_id,
+    article_type.`name`,
+    `user`.login_name,
+    `user`.`password`,
+    `user`.user_name,
+    `user`.role
+    FROM
+    apply
+    LEFT JOIN apply_state ON apply.apply_state = apply_state.apply_state_id
+    LEFT JOIN article ON apply.article_id = article.article_id
+    LEFT JOIN article_type ON article.article_type = article_type.article_type_id
+    LEFT JOIN `user` ON apply.user_id = `user`.user_id
+    where apply.apply_id=#{revokeId}
+  </select>
+  <select id="selectAuditList" resultMap="ApplyAndArticleAndStateAndUserMap">
+    SELECT
+    apply.apply_id,
+    apply.user_id,
+    apply.article_id,
+    apply.apply_num,
+    apply.apply_unit,
+    apply.apply_reason,
+    apply.apply_date,
+    apply.apply_state,
+    apply_state.apply_state_id,
+    apply_state.`name` asName,
+    article.article_name,
+    article.stock_num,
+    article.stock_unit,
+    article.article_type,
+    article.article_describe,
+    article_type.article_type_id,
+    article_type.`name`,
+    `user`.login_name,
+    `user`.`password`,
+    `user`.user_name,
+    `user`.role
+    FROM
+    apply
+    LEFT JOIN apply_state ON apply.apply_state = apply_state.apply_state_id
+    LEFT JOIN article ON apply.article_id = article.article_id
+    LEFT JOIN article_type ON article.article_type = article_type.article_type_id
+    LEFT JOIN `user` ON apply.user_id = `user`.user_id
+    <where>
+      <if test="userName!=null">
+        and `user`.user_name.=#{userName}
+      </if>
+      <if test="applyDate!=null">
+        and  apply.apply_date=#{applyDate}
+      </if>
+      and apply.apply_state = 0
+    </where>
+    order by apply.apply_id asc
+  </select>
+</mapper>
