@@ -1,0 +1,196 @@
+21:46:15.417 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT cid,cname FROM category
+21:46:15.417 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+21:46:15.440 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+21:46:15.440 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+21:46:15.469 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+21:46:15.469 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+21:46:15.472 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+21:46:15.473 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+21:46:15.475 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+21:57:15.118 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT cid,cname FROM category
+21:57:15.118 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+21:57:15.119 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+21:57:15.119 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+21:57:15.120 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+21:57:15.121 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+21:57:15.121 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+21:57:15.121 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+21:57:15.124 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:01:58.489 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:01:58.490 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:01:58.491 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:01:58.492 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:01:58.495 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:01:58.498 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:01:59.076 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:01:59.076 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:01:59.080 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:01:59.080 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:01:59.081 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 6(Integer), 3(Integer)
+22:01:59.083 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:01:59.528 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:01:59.528 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:01:59.529 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:01:59.530 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:01:59.531 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 9(Integer), 3(Integer)
+22:01:59.533 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:02:00.364 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:02:00.365 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:02:00.365 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:02:00.366 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:02:00.366 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:02:00.369 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:05:00.529 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: INSERT INTO products ( pid,pimg,flag ) VALUES( ?,?,? )
+22:05:00.531 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: null, f0590a844e994f4689009b9d82a9c0cb.jpg(String), 0(String)
+22:05:00.549 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==    Updates: 1
+22:05:00.554 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Executing: SELECT LAST_INSERT_ID()
+22:05:00.556 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:05:00.647 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:05:00.647 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:05:00.649 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:05:00.650 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:05:00.651 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:05:00.653 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:13:53.576 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: INSERT INTO products ( pid,pimg,flag ) VALUES( ?,?,? )
+22:13:53.577 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: null, 8d10d31843b34ed3b9491d14a29271db.jpg(String), 0(String)
+22:13:53.580 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==    Updates: 1
+22:13:53.581 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Executing: SELECT LAST_INSERT_ID()
+22:13:53.582 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:13:53.664 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:13:53.666 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:13:53.669 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:13:53.670 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:13:53.670 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:13:53.673 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:29.307 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:29.308 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:29.309 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:29.309 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:29.310 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:14:29.312 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:29.889 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:29.889 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:29.891 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:29.891 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:29.892 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 6(Integer), 3(Integer)
+22:14:29.894 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:30.284 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:30.285 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:30.285 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:30.286 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:30.287 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 9(Integer), 3(Integer)
+22:14:30.289 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:31.545 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:31.546 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:31.547 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:31.548 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:14:31.549 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:14:31.551 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:51.335 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:51.335 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:51.336 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:51.337 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:51.339 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:14:51.342 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:52.321 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:52.322 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:52.322 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:52.323 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:52.324 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 6(Integer), 3(Integer)
+22:14:52.325 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:52.782 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:52.783 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:52.785 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:52.787 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:52.788 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 9(Integer), 3(Integer)
+22:14:52.789 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:53.666 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:53.667 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:53.668 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:53.668 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:53.669 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 6(Integer), 3(Integer)
+22:14:53.671 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:54.327 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:54.328 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:54.330 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:54.331 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:54.331 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:14:54.333 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:54.984 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:54.985 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:54.987 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:54.988 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:14:54.988 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:14:54.990 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:56.070 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:56.071 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:56.072 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:56.072 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:56.073 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:14:56.074 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:56.476 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:56.477 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:56.478 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:56.478 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:56.479 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 6(Integer), 3(Integer)
+22:14:56.480 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:57.029 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:57.029 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:57.030 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:57.031 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:14:57.032 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 9(Integer), 3(Integer)
+22:14:57.033 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:14:57.771 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:14:57.771 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:14:57.772 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:14:57.773 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:14:57.773 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:14:57.774 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:15:14.842 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:15:14.843 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:15:14.844 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:15:14.845 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:15:14.845 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:15:14.847 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:15:15.655 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:15:15.656 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:15:15.656 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:15:15.657 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:15:15.657 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 6(Integer), 3(Integer)
+22:15:15.659 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:15:16.238 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:15:16.239 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:15:16.239 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:15:16.240 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:15:16.241 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 9(Integer), 3(Integer)
+22:15:16.242 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:15:22.990 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:15:22.991 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:15:22.992 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:15:22.992 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:15:22.992 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 6(Integer), 3(Integer)
+22:15:22.994 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:15:23.519 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:15:23.519 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:15:23.520 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:15:23.520 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:15:23.521 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:15:23.522 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:15:24.050 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:15:24.051 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:15:24.052 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:15:24.052 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:15:24.053 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:15:24.054 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:17:00.470 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:17:00.471 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:17:00.472 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:17:00.474 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?, ?
+22:17:00.475 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer), 3(Integer)
+22:17:00.478 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
+22:17:01.645 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT count(0) FROM category RIGHT JOIN products ON products.category_id = category.cid
+22:17:01.646 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 
+22:17:01.647 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 1
+22:17:01.648 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==>  Preparing: SELECT products.pid, products.pname, products.pimg, products.price, products.flag, products.category_id, category.cid, category.cname FROM category RIGHT JOIN products ON products.category_id = category.cid order by products.pid desc LIMIT ?
+22:17:01.649 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - ==> Parameters: 3(Integer)
+22:17:01.659 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - <==      Total: 3
